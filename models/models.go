@@ -36,8 +36,7 @@ func (Order) TableName() string {
 
 func IniDB() (*gorm.DB, error) {
 	var err error
-	dbinfo := fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable",
-		DB_USER, DB_PASSWORD, DB_NAME)
+	dbinfo := fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable", DB_USER, DB_PASSWORD, DB_NAME)
 	db, err := gorm.Open("postgres", dbinfo)
 	if err != nil {
 		return nil, err
