@@ -8,9 +8,9 @@ import (
 )
 
 const (
-	DB_USER     = "postgres"
-	DB_PASSWORD = "postgres"
-	DB_NAME     = "test"
+	DB_USER     = "atanda0x"
+	DB_PASSWORD = "ethereumsolana"
+	DB_NAME     = "mydb"
 )
 
 type User struct {
